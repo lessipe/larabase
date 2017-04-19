@@ -1,0 +1,10 @@
+<?php
+
+$NAMESPACE$;
+
+use Illuminate\Auth\Access\HandlesAuthorization;
+
+class $CLASS$Policy
+{
+    use HandlesAuthorization;
+}
