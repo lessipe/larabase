@@ -1,0 +1,23 @@
+<?php
+
+$NAMESPACE$
+
+use Visualplus\Larabase\Action\BaseAction;
+
+class $CLASS$Job
+{
+    /**
+     * @var BaseAction
+     */
+    private $action;
+
+    /**
+     * $CLASS$Job constructor.
+     *
+     * @param BaseAction $action
+     */
+    public function __construct(BaseAction $action)
+    {
+        $this->action = $action;
+    }
+}

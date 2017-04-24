@@ -2,12 +2,11 @@
 namespace Visualplus\Larabase\Generators\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Collection;
+use Visualplus\Larabase\Generators\ActionGenerator;
 use Visualplus\Larabase\Generators\FileAlreadyExistsException;
 use Symfony\Component\Console\Input\InputArgument;
-use Visualplus\Larabase\Generators\ServiceGenerator;
 
-class ServiceCommand extends Command
+class ActionCommand extends Command
 {
 
     /**
@@ -15,26 +14,21 @@ class ServiceCommand extends Command
      *
      * @var string
      */
-    protected $name = 'gen:service';
+    protected $name = 'gen:action';
 
     /**
      * The description of command.
      *
      * @var string
      */
-    protected $description = 'Create a new service.';
+    protected $description = 'Create a new action.';
 
     /**
      * The type of class being generated.
      *
      * @var string
      */
-    protected $type = 'Service';
-
-    /**
-     * @var Collection
-     */
-    protected $generators = null;
+    protected $type = 'Action';
 
 
     /**
@@ -46,10 +40,11 @@ class ServiceCommand extends Command
     {
 
         try {
-            (new ServiceGenerator([
-                'name'      => $this->argument('name'),
+            (new ActionGenerator([
+                'name'  => $this->argument('name'),
             ]))->run();
             $this->info($this->type . " created successfully.");
+
         } catch (FileAlreadyExistsException $e) {
             $this->error($this->type . ' already exists!');
 
@@ -69,7 +64,7 @@ class ServiceCommand extends Command
             [
                 'name',
                 InputArgument::REQUIRED,
-                'The name of class being generated.',
+                'The name of model for which the presenter is being generated.',
                 null
             ],
         ];

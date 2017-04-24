@@ -39,14 +39,17 @@ class RepositoryServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->commands('Visualplus\Larabase\Generators\Commands\RepositoryCommand');
-        $this->commands('Visualplus\Larabase\Generators\Commands\TransformerCommand');
-        $this->commands('Visualplus\Larabase\Generators\Commands\PresenterCommand');
-        $this->commands('Visualplus\Larabase\Generators\Commands\EntityCommand');
-        $this->commands('Visualplus\Larabase\Generators\Commands\ValidatorCommand');
-        $this->commands('Visualplus\Larabase\Generators\Commands\ControllerCommand');
-        $this->commands('Visualplus\Larabase\Generators\Commands\BindingsCommand');
-        $this->commands('Visualplus\Larabase\Generators\Commands\CriteriaCommand');
+        $this->commands(\Visualplus\Larabase\Generators\Commands\RepositoryCommand::class);
+        $this->commands(\Visualplus\Larabase\Generators\Commands\TransformerCommand::class);
+        $this->commands(\Visualplus\Larabase\Generators\Commands\PresenterCommand::class);
+        $this->commands(\Visualplus\Larabase\Generators\Commands\EntityCommand::class);
+        $this->commands(\Visualplus\Larabase\Generators\Commands\ValidatorCommand::class);
+        $this->commands(\Visualplus\Larabase\Generators\Commands\ControllerCommand::class);
+        $this->commands(\Visualplus\Larabase\Generators\Commands\BindingsCommand::class);
+        $this->commands(\Visualplus\Larabase\Generators\Commands\CriteriaCommand::class);
+        $this->commands(\Visualplus\Larabase\Generators\Commands\ActionCommand::class);
+        $this->commands(\Visualplus\Larabase\Generators\Commands\JobCommand::class);
+        $this->commands(\Visualplus\Larabase\Generators\Commands\ServiceCommand::class);
         $this->app->register('Visualplus\Larabase\Providers\EventServiceProvider');
     }
 
