@@ -6,6 +6,7 @@ use Illuminate\Support\Collection;
 use Visualplus\Larabase\Generators\FileAlreadyExistsException;
 use Symfony\Component\Console\Input\InputArgument;
 use Visualplus\Larabase\Generators\ServiceGenerator;
+use Visualplus\Larabase\Generators\ValidatorGenerator;
 
 class ServiceCommand extends Command
 {
@@ -44,11 +45,17 @@ class ServiceCommand extends Command
      */
     public function fire()
     {
+        $validatorGenerator = new ValidatorGenerator([
+            'name' => $this->argument('name')
+        ]);
+
+        $validatorGenerator->run();
 
         try {
             (new ServiceGenerator([
                 'name'      => $this->argument('name'),
             ]))->run();
+
             $this->info($this->type . " created successfully.");
         } catch (FileAlreadyExistsException $e) {
             $this->error($this->type . ' already exists!');

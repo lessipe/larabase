@@ -3,11 +3,11 @@
 $NAMESPACE$
 
 use Prettus\Validator\LaravelValidator;
-use Visualplus\Larabase\Service;
+use Visualplus\Larabase\Service\BaseService;
 use $REPOSITORY$;
 $USE_VALIDATOR$;
 
-class $CLASS$Service extends Service
+class $CLASS$Service extends BaseService
 {
     /**
      * @var $CLASS$Repository

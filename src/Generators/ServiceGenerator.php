@@ -11,7 +11,7 @@ class ServiceGenerator extends Generator
     /**
      * @var string
      */
-    protected $stub = 'serivce/service';
+    protected $stub = 'service/service';
 
     /**
      * @return string

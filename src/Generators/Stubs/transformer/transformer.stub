@@ -11,10 +11,9 @@ use $MODEL$;
  */
 class $CLASS$Transformer extends TransformerAbstract
 {
-
     /**
-     * Transform the \$CLASS$ entity
-     * @param \$CLASS$ $model
+     * Transform the $CLASS$ entity
+     * @param $CLASS$ $model
      *
      * @return array
      */
