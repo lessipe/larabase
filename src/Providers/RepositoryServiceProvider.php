@@ -25,10 +25,8 @@ class RepositoryServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../../../config/larabase.php' => config_path('larabase.php')
+            __DIR__ . '/../../config/larabase.php' => config_path('larabase.php')
         ]);
-
-        $this->mergeConfigFrom(__DIR__ . '/../../../config/larabase.php', 'repository');
     }
 
 
