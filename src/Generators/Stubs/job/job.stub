@@ -18,4 +18,12 @@ class $CLASS$Job
     {
         $this->action = $action;
     }
+
+    /**
+     * @return mixed
+     */
+    public function handle()
+    {
+
+    }
 }
