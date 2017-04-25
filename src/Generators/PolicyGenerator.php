@@ -34,7 +34,7 @@ class PolicyGenerator extends Generator
      */
     public function getPathConfigNode()
     {
-        return 'repositories';
+        return 'policies';
     }
 
     /**
