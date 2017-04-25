@@ -48,6 +48,7 @@ class LarabaseServiceProvider extends ServiceProvider
         $this->commands(\Visualplus\Larabase\Generators\Commands\ActionCommand::class);
         $this->commands(\Visualplus\Larabase\Generators\Commands\JobCommand::class);
         $this->commands(\Visualplus\Larabase\Generators\Commands\ServiceCommand::class);
+        $this->commands(\Visualplus\Larabase\Generators\Commands\PolicyCommand::class);
         $this->app->register('Visualplus\Larabase\Providers\EventServiceProvider');
     }
 
