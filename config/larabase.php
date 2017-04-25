@@ -34,7 +34,7 @@ return [
         'params'     => [
             'include' => 'include'
         ],
-        'serializer' => League\Fractal\Serializer\DataArraySerializer::class
+        'serializer' => Visualplus\Larabase\Serializers\DefaultSerializer::class,
     ],
 
     /*
