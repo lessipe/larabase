@@ -4,10 +4,10 @@ namespace Visualplus\Larabase\Providers;
 use Illuminate\Support\ServiceProvider;
 
 /**
- * Class RepositoryServiceProvider
+ * Class LarabaseServiceProvider
  * @package Visualplus\Larabase\Providers
  */
-class RepositoryServiceProvider extends ServiceProvider
+class LarabaseServiceProvider extends ServiceProvider
 {
 
     /**

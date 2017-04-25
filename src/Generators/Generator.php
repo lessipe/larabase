@@ -226,7 +226,7 @@ abstract class Generator
                 $path = config('larabase.generator.paths.controllers', 'Http\Controllers');
                 break;
             case ('provider' === $class):
-                $path = config('larabase.generator.paths.provider', 'RepositoryServiceProvider');
+                $path = config('larabase.generator.paths.provider', 'LarabaseServiceProvider');
                 break;
             case ('criteria' === $class):
                 $path = config('larabase.generator.paths.criteria', 'Criteria');

@@ -2,21 +2,19 @@
 
 $NAMESPACE$
 
-use Visualplus\Larabase\Action\BaseAction;
-
 class $CLASS$Job
 {
     /**
-     * @var BaseAction
+     * @var $CLASS$JobInterface
      */
     private $action;
 
     /**
      * $CLASS$Job constructor.
      *
-     * @param BaseAction $action
+     * @param $CLASS$JobInterface $action
      */
-    public function __construct(BaseAction $action)
+    public function __construct($CLASS$JobInterface $action)
     {
         $this->action = $action;
     }

@@ -234,7 +234,7 @@ return [
             'presenters'   => 'Presenters',
             'validators'   => 'Validators',
             'controllers'  => 'Http/Controllers',
-            'provider'     => 'RepositoryServiceProvider',
+            'provider'     => 'LarabaseServiceProvider',
             'criteria'     => 'Criteria',
             'stubsOverridePath' => app_path()
         ]
