@@ -22,5 +22,10 @@ abstract class BaseAction
     /**
      * @return array
      */
-    abstract public function getJobs();
+    abstract public function getTransactionalJobs();
+
+    /**
+     * @return array
+     */
+    abstract public function getFinishJobs();
 }
