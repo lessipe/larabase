@@ -2,7 +2,6 @@
 
 namespace Visualplus\Larabase\Action;
 
-use DB;
 use Illuminate\Contracts\Bus\Dispatcher;
 use Illuminate\Database\DatabaseManager;
 
@@ -48,7 +47,10 @@ class ActionPerformer
         $this->databaseManager->connection()->commit();
 
         foreach ($action->getFinishJobs() as $finishJob) {
-            $this->dispatcher->dispatch(new $finishJob($action));
+            try {
+                $this->dispatcher->dispatch(new $finishJob($action));
+            } catch (\Exception $e) {
+            }
         }
     }
 }
