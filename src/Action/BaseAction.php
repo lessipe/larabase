@@ -28,4 +28,9 @@ abstract class BaseAction
      * @return array
      */
     abstract public function getFinishJobs();
+
+    /**
+     * @return mixed
+     */
+    abstract public function getDefaultOutput();
 }

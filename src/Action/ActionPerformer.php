@@ -31,6 +31,7 @@ class ActionPerformer
 
     /**
      * @param BaseAction $action
+     * @return mixed
      */
     public function perform(BaseAction $action)
     {
@@ -52,5 +53,7 @@ class ActionPerformer
             } catch (\Exception $e) {
             }
         }
+
+        return $action->getDefaultOutput();
     }
 }

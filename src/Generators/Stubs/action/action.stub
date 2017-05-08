@@ -9,7 +9,7 @@ class $CLASS$Action extends BaseAction
     /**
      * @var array
      */
-    private $data;
+    protected $data;
 
     /**
      * $CLASS$Action constructor.
@@ -37,5 +37,12 @@ class $CLASS$Action extends BaseAction
     {
         return [
         ];
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDefaultOutput()
+    {
     }
 }
