@@ -31,7 +31,7 @@ abstract class BaseService
      */
     protected function authorize($target, $rule = 'create')
     {
-        if (Gate::denies($target, $rule)) {
+        if (Gate::denies($rule, $target)) {
             throw new UnauthorizedException();
         }
     }
