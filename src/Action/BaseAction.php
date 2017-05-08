@@ -7,7 +7,7 @@ abstract class BaseAction
     /**
      * @var array
      */
-    private $performedData = [];
+    protected $performedData = [];
 
     /**
      * @param $tag
