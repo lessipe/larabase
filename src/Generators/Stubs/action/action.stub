@@ -24,7 +24,16 @@ class $CLASS$Action extends BaseAction
     /**
      * @return array
      */
-    public function getJobs()
+    public function getTransactionalJobs()
+    {
+        return [
+        ];
+    }
+
+    /**
+     * @return array
+     */
+    public function getFinishJobs()
     {
         return [
         ];
