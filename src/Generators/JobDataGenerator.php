@@ -3,17 +3,17 @@
 namespace Visualplus\Larabase\Generators;
 
 /**
- * Class JobInterfaceGenerator
+ * Class JobDataGenerator
  * @package Visualplus\Larabase\Generators
  */
-class JobInterfaceGenerator extends Generator
+class JobDataGenerator extends Generator
 {
     /**
      * Get stub name.
      *
      * @var string
      */
-    protected $stub = 'job/interface';
+    protected $stub = 'job/data';
 
     /**
      * Get root namespace.
@@ -42,7 +42,7 @@ class JobInterfaceGenerator extends Generator
      */
     public function getPath()
     {
-        return $this->getBasePath() . '/' . parent::getConfigGeneratorClassPath($this->getPathConfigNode(), true) . '/' . $this->getName() . 'JobInterface.php';
+        return $this->getBasePath() . '/' . parent::getConfigGeneratorClassPath($this->getPathConfigNode(), true) . '/' . $this->getName() . 'JobData.php';
     }
 
     /**

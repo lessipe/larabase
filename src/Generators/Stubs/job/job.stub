@@ -5,16 +5,16 @@ $NAMESPACE$
 class $CLASS$Job
 {
     /**
-     * @var $CLASS$JobInterface
+     * @var $CLASS$JobData
      */
     private $action;
 
     /**
      * $CLASS$Job constructor.
      *
-     * @param $CLASS$JobInterface $action
+     * @param $CLASS$JobData $action
      */
-    public function __construct($CLASS$JobInterface $action)
+    public function __construct($CLASS$JobData $action)
     {
         $this->action = $action;
     }

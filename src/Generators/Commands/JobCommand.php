@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 use Visualplus\Larabase\Generators\FileAlreadyExistsException;
 use Symfony\Component\Console\Input\InputArgument;
 use Visualplus\Larabase\Generators\JobGenerator;
-use Visualplus\Larabase\Generators\JobInterfaceGenerator;
+use Visualplus\Larabase\Generators\JobDataGenerator;
 
 class JobCommand extends Command
 {
@@ -40,7 +40,7 @@ class JobCommand extends Command
      */
     public function fire()
     {
-        $jobInterfaceGenerator = new JobInterfaceGenerator([
+        $jobInterfaceGenerator = new JobDataGenerator([
             'name' => $this->argument('name'),
         ]);
 
