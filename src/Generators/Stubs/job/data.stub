@@ -2,7 +2,7 @@
 
 $NAMESPACE$
 
-interface $CLASS$JobData
+class $CLASS$JobData
 {
 
 }
