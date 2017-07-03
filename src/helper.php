@@ -6,6 +6,6 @@ if (! function_exists('perform')) {
      */
     function perform(\Visualplus\Larabase\Action\BaseAction $action)
     {
-        app(\Visualplus\Larabase\Action\ActionPerformer::class)->perform($action);
+        return app(\Visualplus\Larabase\Action\ActionPerformer::class)->perform($action);
     }
 }
