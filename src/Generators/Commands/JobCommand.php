@@ -40,12 +40,6 @@ class JobCommand extends Command
      */
     public function fire()
     {
-        $jobInterfaceGenerator = new JobInterfaceGenerator([
-            'name' => $this->argument('name'),
-        ]);
-
-        $jobInterfaceGenerator->run();
-
         try {
             (new JobGenerator([
                 'name'  => $this->argument('name'),
