@@ -8,9 +8,6 @@
         }
     ],
     "autoload": {
-        "files": [
-            "src/helper.php"
-        ],
         "psr-4": {
             "Visualplus\\Larabase\\": "src/"
         }
