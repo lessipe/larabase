@@ -5,21 +5,6 @@ $NAMESPACE$
 class $CLASS$Job
 {
     /**
-     * @var $CLASS$JobInterface
-     */
-    private $action;
-
-    /**
-     * $CLASS$Job constructor.
-     *
-     * @param $CLASS$JobInterface $action
-     */
-    public function __construct($CLASS$JobInterface $action)
-    {
-        $this->action = $action;
-    }
-
-    /**
      * @return mixed
      */
     public function handle()
