@@ -236,6 +236,7 @@ return [
             'controllers'  => 'Http/Controllers',
             'provider'     => 'LarabaseServiceProvider',
             'criteria'     => 'Criteria',
+            'composers'    => 'Composers',
             'stubsOverridePath' => app_path()
         ]
     ]

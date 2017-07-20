@@ -1,0 +1,16 @@
+<?php
+
+$NAMESPACE$
+
+use Illuminate\View\View;
+
+class $COMPOSER$Composer
+{
+    /**
+     * Bind data to the view
+     * @return void
+     */
+    public function compose()
+    {
+    }
+}
