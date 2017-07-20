@@ -4,7 +4,7 @@ $NAMESPACE$
 
 use Illuminate\View\View;
 
-class $COMPOSER$Composer
+class $CLASS$Composer
 {
     /**
      * Bind data to the view

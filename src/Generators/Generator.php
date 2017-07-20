@@ -195,6 +195,9 @@ abstract class Generator
     public function getConfigGeneratorClassPath($class, $directoryPath = false)
     {
         switch ($class) {
+            case ('composers' === $class):
+                $path = config('larabase.generator.paths.composers', 'Composers');
+                break;
             case ('policies' === $class):
                 $path = config('larabase.generator.paths.policies', 'Policies');
                 break;
