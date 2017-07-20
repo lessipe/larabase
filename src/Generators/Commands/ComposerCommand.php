@@ -6,6 +6,8 @@ namespace Visualplus\Larabase\Generators\Commands;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;
+use Visualplus\Larabase\Generators\ComposerGenerator;
+use Visualplus\Larabase\Generators\FileAlreadyExistsException;
 
 class ComposerCommand extends Command
 {
@@ -38,6 +40,16 @@ class ComposerCommand extends Command
      */
     public function fire()
     {
+        try {
+            (new ComposerGenerator([
+                'name' => $this->argument('name')
+            ]))->run();
+            $this->info($this->type . ' created successfully.');
+        } catch (FileAlreadyExistsException $e) {
+            $this->error($this->type . ' already exists!');
+
+            return false;
+        }
     }
 
 
