@@ -3,6 +3,7 @@ namespace Visualplus\Larabase\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Visualplus\Larabase\Generators\Commands\ComposerCommand;
+use Visualplus\Larabase\Generators\Commands\ExceptionCommand;
 
 /**
  * Class LarabaseServiceProvider
@@ -51,6 +52,7 @@ class LarabaseServiceProvider extends ServiceProvider
         $this->commands(\Visualplus\Larabase\Generators\Commands\ServiceCommand::class);
         $this->commands(\Visualplus\Larabase\Generators\Commands\PolicyCommand::class);
         $this->commands(ComposerCommand::class);
+        $this->commands(ExceptionCommand::class);
         $this->app->register('Visualplus\Larabase\Providers\EventServiceProvider');
     }
 

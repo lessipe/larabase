@@ -1,0 +1,11 @@
+<?php
+
+$NAMESPACE$
+
+/**
+ * Class $CLASS$Exception
+ * @package $NAMESPACE$
+ */
+class $CLASS$Exception extends \Exception
+{
+}
