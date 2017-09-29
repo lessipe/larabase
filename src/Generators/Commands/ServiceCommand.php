@@ -43,7 +43,7 @@ class ServiceCommand extends Command
      *
      * @return void
      */
-    public function fire()
+    public function handle()
     {
         $validatorGenerator = new ValidatorGenerator([
             'name' => $this->argument('name')

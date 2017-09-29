@@ -38,7 +38,7 @@ class JobCommand extends Command
      *
      * @return void
      */
-    public function fire()
+    public function handle()
     {
         try {
             (new JobGenerator([

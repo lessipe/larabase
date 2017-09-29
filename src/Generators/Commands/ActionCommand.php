@@ -36,7 +36,7 @@ class ActionCommand extends Command
      *
      * @return void
      */
-    public function fire()
+    public function handle()
     {
 
         try {
