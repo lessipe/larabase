@@ -26,8 +26,7 @@
         "illuminate/console": "~5.0",
         "illuminate/filesystem": "~5.0",
         "prettus/laravel-validation": "1.1.*",
-        "league/fractal": "^0.16.0",
-        "visualplus/laravel-aligo-sms": "^0.0.1"
+        "league/fractal": "^0.16.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
