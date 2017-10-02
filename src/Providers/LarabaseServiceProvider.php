@@ -29,6 +29,8 @@ class LarabaseServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../../config/larabase.php' => config_path('larabase.php')
         ]);
+
+        $this->loadMigrationsFrom(__DIR__ . '/../../migrations');
     }
 
 
