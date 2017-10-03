@@ -14,6 +14,14 @@ use Visualplus\Larabase\Entities\File;
 abstract class BaseService
 {
     /**
+     * @param File $file
+     */
+    protected function fileDestroy(File $file)
+    {
+        Storage::delete($file->file_name);
+    }
+
+    /**
      * @param Model $parent
      * @param UploadedFile $file
      * @param $path
