@@ -1,13 +1,13 @@
 <?php
 
 
-namespace Visualplus\Larabase\Generators\Commands;
+namespace Lessipe\Larabase\Generators\Commands;
 
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;
-use Visualplus\Larabase\Generators\ComposerGenerator;
-use Visualplus\Larabase\Generators\FileAlreadyExistsException;
+use Lessipe\Larabase\Generators\ComposerGenerator;
+use Lessipe\Larabase\Generators\FileAlreadyExistsException;
 
 class ComposerCommand extends Command
 {

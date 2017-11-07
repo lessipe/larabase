@@ -1,11 +1,11 @@
 <?php
-namespace Visualplus\Larabase\Contracts;
+namespace Lessipe\Larabase\Contracts;
 
 use Illuminate\Contracts\Cache\Repository as CacheRepository;
 
 /**
  * Interface CacheableInterface
- * @package Visualplus\Larabase\Contracts
+ * @package Lessipe\Larabase\Contracts
  */
 interface CacheableInterface
 {

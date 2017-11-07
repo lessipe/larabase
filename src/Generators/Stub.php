@@ -1,10 +1,10 @@
 <?php
 
-namespace Visualplus\Larabase\Generators;
+namespace Lessipe\Larabase\Generators;
 
 /**
  * Class Stub
- * @package Visualplus\Larabase\Generators
+ * @package Lessipe\Larabase\Generators
  */
 class Stub
 {

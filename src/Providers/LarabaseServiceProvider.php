@@ -1,13 +1,13 @@
 <?php
-namespace Visualplus\Larabase\Providers;
+namespace Lessipe\Larabase\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Visualplus\Larabase\Generators\Commands\ComposerCommand;
-use Visualplus\Larabase\Generators\Commands\ExceptionCommand;
+use Lessipe\Larabase\Generators\Commands\ComposerCommand;
+use Lessipe\Larabase\Generators\Commands\ExceptionCommand;
 
 /**
  * Class LarabaseServiceProvider
- * @package Visualplus\Larabase\Providers
+ * @package Lessipe\Larabase\Providers
  */
 class LarabaseServiceProvider extends ServiceProvider
 {
@@ -41,21 +41,21 @@ class LarabaseServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->commands(\Visualplus\Larabase\Generators\Commands\RepositoryCommand::class);
-        $this->commands(\Visualplus\Larabase\Generators\Commands\TransformerCommand::class);
-        $this->commands(\Visualplus\Larabase\Generators\Commands\PresenterCommand::class);
-        $this->commands(\Visualplus\Larabase\Generators\Commands\EntityCommand::class);
-        $this->commands(\Visualplus\Larabase\Generators\Commands\ValidatorCommand::class);
-        $this->commands(\Visualplus\Larabase\Generators\Commands\ControllerCommand::class);
-        $this->commands(\Visualplus\Larabase\Generators\Commands\BindingsCommand::class);
-        $this->commands(\Visualplus\Larabase\Generators\Commands\CriteriaCommand::class);
-        $this->commands(\Visualplus\Larabase\Generators\Commands\ActionCommand::class);
-        $this->commands(\Visualplus\Larabase\Generators\Commands\JobCommand::class);
-        $this->commands(\Visualplus\Larabase\Generators\Commands\ServiceCommand::class);
-        $this->commands(\Visualplus\Larabase\Generators\Commands\PolicyCommand::class);
+        $this->commands(\Lessipe\Larabase\Generators\Commands\RepositoryCommand::class);
+        $this->commands(\Lessipe\Larabase\Generators\Commands\TransformerCommand::class);
+        $this->commands(\Lessipe\Larabase\Generators\Commands\PresenterCommand::class);
+        $this->commands(\Lessipe\Larabase\Generators\Commands\EntityCommand::class);
+        $this->commands(\Lessipe\Larabase\Generators\Commands\ValidatorCommand::class);
+        $this->commands(\Lessipe\Larabase\Generators\Commands\ControllerCommand::class);
+        $this->commands(\Lessipe\Larabase\Generators\Commands\BindingsCommand::class);
+        $this->commands(\Lessipe\Larabase\Generators\Commands\CriteriaCommand::class);
+        $this->commands(\Lessipe\Larabase\Generators\Commands\ActionCommand::class);
+        $this->commands(\Lessipe\Larabase\Generators\Commands\JobCommand::class);
+        $this->commands(\Lessipe\Larabase\Generators\Commands\ServiceCommand::class);
+        $this->commands(\Lessipe\Larabase\Generators\Commands\PolicyCommand::class);
         $this->commands(ComposerCommand::class);
         $this->commands(ExceptionCommand::class);
-        $this->app->register('Visualplus\Larabase\Providers\EventServiceProvider');
+        $this->app->register('Lessipe\Larabase\Providers\EventServiceProvider');
     }
 
 

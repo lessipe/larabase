@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Visualplus\Larabase\Generators;
+namespace Lessipe\Larabase\Generators;
 
 
 class ComposerGenerator extends Generator

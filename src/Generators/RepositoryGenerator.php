@@ -1,11 +1,11 @@
 <?php
-namespace Visualplus\Larabase\Generators;
+namespace Lessipe\Larabase\Generators;
 
-use Visualplus\Larabase\Generators\Migrations\SchemaParser;
+use Lessipe\Larabase\Generators\Migrations\SchemaParser;
 
 /**
  * Class RepositoryGenerator
- * @package Visualplus\Larabase\Generators
+ * @package Lessipe\Larabase\Generators
  */
 class RepositoryGenerator extends Generator
 {

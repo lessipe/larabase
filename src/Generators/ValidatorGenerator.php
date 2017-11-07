@@ -1,12 +1,12 @@
 <?php
-namespace Visualplus\Larabase\Generators;
+namespace Lessipe\Larabase\Generators;
 
-use Visualplus\Larabase\Generators\Migrations\RulesParser;
-use Visualplus\Larabase\Generators\Migrations\SchemaParser;
+use Lessipe\Larabase\Generators\Migrations\RulesParser;
+use Lessipe\Larabase\Generators\Migrations\SchemaParser;
 
 /**
  * Class ValidatorGenerator
- * @package Visualplus\Larabase\Generators
+ * @package Lessipe\Larabase\Generators
  */
 class ValidatorGenerator extends Generator
 {

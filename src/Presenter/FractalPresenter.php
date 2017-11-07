@@ -1,5 +1,5 @@
 <?php
-namespace Visualplus\Larabase\Presenter;
+namespace Lessipe\Larabase\Presenter;
 
 use Exception;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
@@ -11,11 +11,11 @@ use League\Fractal\Pagination\IlluminatePaginatorAdapter;
 use League\Fractal\Resource\Collection;
 use League\Fractal\Resource\Item;
 use League\Fractal\Serializer\SerializerAbstract;
-use Visualplus\Larabase\Contracts\PresenterInterface;
+use Lessipe\Larabase\Contracts\PresenterInterface;
 
 /**
  * Class FractalPresenter
- * @package Visualplus\Larabase\Presenter
+ * @package Lessipe\Larabase\Presenter
  */
 abstract class FractalPresenter implements PresenterInterface
 {

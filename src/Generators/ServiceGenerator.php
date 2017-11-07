@@ -1,10 +1,10 @@
 <?php
 
-namespace Visualplus\Larabase\Generators;
+namespace Lessipe\Larabase\Generators;
 
 /**
  * Class ServiceGenerator
- * @package Visualplus\Larabase\Generators
+ * @package Lessipe\Larabase\Generators
  */
 class ServiceGenerator extends Generator
 {

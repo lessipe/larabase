@@ -1,10 +1,10 @@
 <?php
 
-namespace Visualplus\Larabase\Helpers;
+namespace Lessipe\Larabase\Helpers;
 
 /**
  * Class CacheKeys
- * @package Visualplus\Larabase\Helpers
+ * @package Lessipe\Larabase\Helpers
  */
 class CacheKeys
 {

@@ -1,9 +1,9 @@
 <?php
-namespace Visualplus\Larabase\Events;
+namespace Lessipe\Larabase\Events;
 
 /**
  * Class RepositoryEntityDeleted
- * @package Visualplus\Larabase\Events
+ * @package Lessipe\Larabase\Events
  */
 class RepositoryEntityDeleted extends RepositoryEventBase
 {

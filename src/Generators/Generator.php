@@ -1,6 +1,6 @@
 <?php
 
-namespace Visualplus\Larabase\Generators;
+namespace Lessipe\Larabase\Generators;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;

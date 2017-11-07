@@ -1,11 +1,11 @@
 <?php
-namespace Visualplus\Larabase\Generators;
+namespace Lessipe\Larabase\Generators;
 
 use Exception;
 
 /**
  * Class FileAlreadyExistsException
- * @package Visualplus\Larabase\Generators
+ * @package Lessipe\Larabase\Generators
  */
 class FileAlreadyExistsException extends Exception
 {

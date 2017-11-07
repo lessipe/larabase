@@ -1,10 +1,10 @@
 <?php
-namespace Visualplus\Larabase\Generators\Commands;
+namespace Lessipe\Larabase\Generators\Commands;
 
 use Illuminate\Console\Command;
-use Visualplus\Larabase\Generators\FileAlreadyExistsException;
-use Visualplus\Larabase\Generators\PresenterGenerator;
-use Visualplus\Larabase\Generators\TransformerGenerator;
+use Lessipe\Larabase\Generators\FileAlreadyExistsException;
+use Lessipe\Larabase\Generators\PresenterGenerator;
+use Lessipe\Larabase\Generators\TransformerGenerator;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 

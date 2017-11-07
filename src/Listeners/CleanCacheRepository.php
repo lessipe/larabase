@@ -1,18 +1,18 @@
 <?php
 
-namespace Visualplus\Larabase\Listeners;
+namespace Lessipe\Larabase\Listeners;
 
 use Illuminate\Contracts\Cache\Repository as CacheRepository;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Log;
-use Visualplus\Larabase\Contracts\RepositoryInterface;
-use Visualplus\Larabase\Events\RepositoryEventBase;
-use Visualplus\Larabase\Helpers\CacheKeys;
+use Lessipe\Larabase\Contracts\RepositoryInterface;
+use Lessipe\Larabase\Events\RepositoryEventBase;
+use Lessipe\Larabase\Helpers\CacheKeys;
 
 /**
  * Class CleanCacheRepository
- * @package Visualplus\Larabase\Listeners
+ * @package Lessipe\Larabase\Listeners
  */
 class CleanCacheRepository
 {

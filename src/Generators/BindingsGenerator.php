@@ -1,9 +1,9 @@
 <?php
-namespace Visualplus\Larabase\Generators;
+namespace Lessipe\Larabase\Generators;
 
 /**
  * Class BindingsGenerator
- * @package Visualplus\Larabase\Generators
+ * @package Lessipe\Larabase\Generators
  */
 class BindingsGenerator extends Generator
 {

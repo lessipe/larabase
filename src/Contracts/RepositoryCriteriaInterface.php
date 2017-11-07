@@ -1,12 +1,12 @@
 <?php
-namespace Visualplus\Larabase\Contracts;
+namespace Lessipe\Larabase\Contracts;
 
 use Illuminate\Support\Collection;
 
 
 /**
  * Interface RepositoryCriteriaInterface
- * @package Visualplus\Larabase\Contracts
+ * @package Lessipe\Larabase\Contracts
  */
 interface RepositoryCriteriaInterface
 {

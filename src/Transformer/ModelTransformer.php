@@ -1,11 +1,11 @@
-<?php namespace Visualplus\Larabase\Transformer;
+<?php namespace Lessipe\Larabase\Transformer;
 
 use League\Fractal\TransformerAbstract;
-use Visualplus\Larabase\Contracts\Transformable;
+use Lessipe\Larabase\Contracts\Transformable;
 
 /**
  * Class ModelTransformer
- * @package Visualplus\Larabase\Transformer
+ * @package Lessipe\Larabase\Transformer
  */
 class ModelTransformer extends TransformerAbstract
 {

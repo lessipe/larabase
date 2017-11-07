@@ -3,7 +3,7 @@
 $NAMESPACE$
 
 use $TRANSFORMER$;
-use Visualplus\Larabase\Presenter\FractalPresenter;
+use Lessipe\Larabase\Presenter\FractalPresenter;
 
 /**
  * Class $CLASS$Presenter

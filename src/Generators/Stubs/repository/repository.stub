@@ -2,8 +2,8 @@
 
 $NAMESPACE$
 
-use Visualplus\Larabase\Eloquent\BaseRepository;
-use Visualplus\Larabase\Criteria\RequestCriteria;
+use Lessipe\Larabase\Eloquent\BaseRepository;
+use Lessipe\Larabase\Criteria\RequestCriteria;
 use $MODEL$;
 
 /**

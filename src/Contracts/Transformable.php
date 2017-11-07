@@ -1,9 +1,9 @@
 <?php
-namespace Visualplus\Larabase\Contracts;
+namespace Lessipe\Larabase\Contracts;
 
 /**
  * Interface Transformable
- * @package Visualplus\Larabase\Contracts
+ * @package Lessipe\Larabase\Contracts
  */
 interface Transformable
 {

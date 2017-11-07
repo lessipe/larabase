@@ -3,18 +3,18 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "djso",
-            "email": "visualplus@daum.net"
+            "name": "lessipe",
+            "email": "lessipe@lessipe.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Visualplus\\Larabase\\": "src/"
+            "Lessipe\\Larabase\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Visualplus\\Larabase\\Tests\\": "tests/"
+            "Lessipe\\Larabase\\Tests\\": "tests/"
         }
     },
     "require": {

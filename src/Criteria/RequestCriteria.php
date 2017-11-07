@@ -1,15 +1,15 @@
 <?php
-namespace Visualplus\Larabase\Criteria;
+namespace Lessipe\Larabase\Criteria;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
-use Visualplus\Larabase\Contracts\CriteriaInterface;
-use Visualplus\Larabase\Contracts\RepositoryInterface;
+use Lessipe\Larabase\Contracts\CriteriaInterface;
+use Lessipe\Larabase\Contracts\RepositoryInterface;
 
 /**
  * Class RequestCriteria
- * @package Visualplus\Larabase\Criteria
+ * @package Lessipe\Larabase\Criteria
  */
 class RequestCriteria implements CriteriaInterface
 {

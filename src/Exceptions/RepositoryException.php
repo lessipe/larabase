@@ -1,11 +1,11 @@
 <?php
-namespace Visualplus\Larabase\Exceptions;
+namespace Lessipe\Larabase\Exceptions;
 
 use Exception;
 
 /**
  * Class RepositoryException
- * @package Visualplus\Larabase\Exceptions
+ * @package Lessipe\Larabase\Exceptions
  */
 class RepositoryException extends Exception
 {

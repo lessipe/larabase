@@ -3,7 +3,7 @@
 $NAMESPACE$
 
 use Prettus\Validator\LaravelValidator;
-use Visualplus\Larabase\Service\BaseService;
+use Lessipe\Larabase\Service\BaseService;
 use $REPOSITORY$;
 $USE_VALIDATOR$;
 

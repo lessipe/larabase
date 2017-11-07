@@ -2,8 +2,8 @@
 
 $NAMESPACE$
 
-use Visualplus\Larabase\Contracts\CriteriaInterface;
-use Visualplus\Larabase\Contracts\RepositoryInterface;
+use Lessipe\Larabase\Contracts\CriteriaInterface;
+use Lessipe\Larabase\Contracts\RepositoryInterface;
 
 /**
  * Class $CLASS$Criteria

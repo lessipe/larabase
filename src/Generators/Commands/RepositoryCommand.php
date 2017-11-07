@@ -1,12 +1,12 @@
 <?php
-namespace Visualplus\Larabase\Generators\Commands;
+namespace Lessipe\Larabase\Generators\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
-use Visualplus\Larabase\Generators\FileAlreadyExistsException;
-use Visualplus\Larabase\Generators\MigrationGenerator;
-use Visualplus\Larabase\Generators\ModelGenerator;
-use Visualplus\Larabase\Generators\RepositoryGenerator;
+use Lessipe\Larabase\Generators\FileAlreadyExistsException;
+use Lessipe\Larabase\Generators\MigrationGenerator;
+use Lessipe\Larabase\Generators\ModelGenerator;
+use Lessipe\Larabase\Generators\RepositoryGenerator;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 

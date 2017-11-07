@@ -1,13 +1,13 @@
 <?php
 
-namespace Visualplus\Larabase\Traits;
+namespace Lessipe\Larabase\Traits;
 
 use Illuminate\Support\Arr;
-use Visualplus\Larabase\Contracts\PresenterInterface;
+use Lessipe\Larabase\Contracts\PresenterInterface;
 
 /**
  * Class PresentableTrait
- * @package Visualplus\Larabase\Traits
+ * @package Lessipe\Larabase\Traits
  */
 trait PresentableTrait
 {
@@ -18,7 +18,7 @@ trait PresentableTrait
     protected $presenter = null;
 
     /**
-     * @param \Visualplus\Larabase\Contracts\PresenterInterface $presenter
+     * @param \Lessipe\Larabase\Contracts\PresenterInterface $presenter
      *
      * @return $this
      */

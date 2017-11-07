@@ -1,10 +1,10 @@
 <?php
-namespace Visualplus\Larabase\Generators\Commands;
+namespace Lessipe\Larabase\Generators\Commands;
 
 use Illuminate\Console\Command;
-use Visualplus\Larabase\Generators\FileAlreadyExistsException;
+use Lessipe\Larabase\Generators\FileAlreadyExistsException;
 use Symfony\Component\Console\Input\InputArgument;
-use Visualplus\Larabase\Generators\PolicyGenerator;
+use Lessipe\Larabase\Generators\PolicyGenerator;
 
 class PolicyCommand extends Command
 {

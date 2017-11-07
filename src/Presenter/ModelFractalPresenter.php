@@ -1,12 +1,12 @@
 <?php
-namespace Visualplus\Larabase\Presenter;
+namespace Lessipe\Larabase\Presenter;
 
 use Exception;
-use Visualplus\Larabase\Transformer\ModelTransformer;
+use Lessipe\Larabase\Transformer\ModelTransformer;
 
 /**
  * Class ModelFractalPresenter
- * @package Visualplus\Larabase\Presenter
+ * @package Lessipe\Larabase\Presenter
  */
 class ModelFractalPresenter extends FractalPresenter
 {

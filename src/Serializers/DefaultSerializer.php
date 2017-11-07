@@ -1,6 +1,6 @@
 <?php
 
-namespace Visualplus\Larabase\Serializers;
+namespace Lessipe\Larabase\Serializers;
 
 use League\Fractal\Serializer\ArraySerializer;
 

@@ -1,10 +1,10 @@
 <?php
-namespace Visualplus\Larabase\Generators\Commands;
+namespace Lessipe\Larabase\Generators\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
-use Visualplus\Larabase\Generators\FileAlreadyExistsException;
-use Visualplus\Larabase\Generators\ValidatorGenerator;
+use Lessipe\Larabase\Generators\FileAlreadyExistsException;
+use Lessipe\Larabase\Generators\ValidatorGenerator;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 

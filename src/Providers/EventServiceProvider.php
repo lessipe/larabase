@@ -1,5 +1,5 @@
 <?php
-namespace Visualplus\Larabase\Providers;
+namespace Lessipe\Larabase\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -12,14 +12,14 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'Visualplus\Larabase\Events\RepositoryEntityCreated' => [
-            'Visualplus\Larabase\Listeners\CleanCacheRepository'
+        'Lessipe\Larabase\Events\RepositoryEntityCreated' => [
+            'Lessipe\Larabase\Listeners\CleanCacheRepository'
         ],
-        'Visualplus\Larabase\Events\RepositoryEntityUpdated' => [
-            'Visualplus\Larabase\Listeners\CleanCacheRepository'
+        'Lessipe\Larabase\Events\RepositoryEntityUpdated' => [
+            'Lessipe\Larabase\Listeners\CleanCacheRepository'
         ],
-        'Visualplus\Larabase\Events\RepositoryEntityDeleted' => [
-            'Visualplus\Larabase\Listeners\CleanCacheRepository'
+        'Lessipe\Larabase\Events\RepositoryEntityDeleted' => [
+            'Lessipe\Larabase\Listeners\CleanCacheRepository'
         ]
     ];
 

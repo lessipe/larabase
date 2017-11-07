@@ -1,16 +1,16 @@
 <?php
 
-namespace Visualplus\Larabase\Traits;
+namespace Lessipe\Larabase\Traits;
 
 use Illuminate\Contracts\Cache\Repository as CacheRepository;
-use Visualplus\Larabase\Contracts\CriteriaInterface;
-use Visualplus\Larabase\Helpers\CacheKeys;
+use Lessipe\Larabase\Contracts\CriteriaInterface;
+use Lessipe\Larabase\Helpers\CacheKeys;
 use ReflectionObject;
 use Exception;
 
 /**
  * Class CacheableRepository
- * @package Visualplus\Larabase\Traits
+ * @package Lessipe\Larabase\Traits
  */
 trait CacheableRepository
 {
@@ -150,8 +150,8 @@ trait CacheableRepository
     /**
      * Serialize single criterion with customized serialization of Closures.
      *
-     * @param  \Visualplus\Larabase\Contracts\CriteriaInterface $criterion
-     * @return \Visualplus\Larabase\Contracts\CriteriaInterface|array
+     * @param  \Lessipe\Larabase\Contracts\CriteriaInterface $criterion
+     * @return \Lessipe\Larabase\Contracts\CriteriaInterface|array
      *
      * @throws \Exception
      */

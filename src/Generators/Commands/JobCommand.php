@@ -1,12 +1,12 @@
 <?php
 
-namespace Visualplus\Larabase\Generators\Commands;
+namespace Lessipe\Larabase\Generators\Commands;
 
 use Illuminate\Console\Command;
-use Visualplus\Larabase\Generators\FileAlreadyExistsException;
+use Lessipe\Larabase\Generators\FileAlreadyExistsException;
 use Symfony\Component\Console\Input\InputArgument;
-use Visualplus\Larabase\Generators\JobGenerator;
-use Visualplus\Larabase\Generators\JobInterfaceGenerator;
+use Lessipe\Larabase\Generators\JobGenerator;
+use Lessipe\Larabase\Generators\JobInterfaceGenerator;
 
 class JobCommand extends Command
 {

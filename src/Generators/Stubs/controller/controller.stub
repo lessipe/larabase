@@ -40,7 +40,7 @@ class $CONTROLLER$Controller extends Controller
      */
     public function index()
     {
-        $this->repository->pushCriteria(app('Visualplus\Larabase\Criteria\RequestCriteria'));
+        $this->repository->pushCriteria(app('Lessipe\Larabase\Criteria\RequestCriteria'));
         $$PLURAL$ = $this->repository->all();
 
         if (request()->wantsJson()) {

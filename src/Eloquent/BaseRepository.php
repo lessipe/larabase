@@ -1,5 +1,5 @@
 <?php
-namespace Visualplus\Larabase\Eloquent;
+namespace Lessipe\Larabase\Eloquent;
 
 use Closure;
 use Exception;
@@ -8,22 +8,22 @@ use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
-use Visualplus\Larabase\Contracts\CriteriaInterface;
-use Visualplus\Larabase\Contracts\Presentable;
-use Visualplus\Larabase\Contracts\PresentableInterface;
-use Visualplus\Larabase\Contracts\PresenterInterface;
-use Visualplus\Larabase\Contracts\RepositoryCriteriaInterface;
-use Visualplus\Larabase\Contracts\RepositoryInterface;
-use Visualplus\Larabase\Events\RepositoryEntityCreated;
-use Visualplus\Larabase\Events\RepositoryEntityDeleted;
-use Visualplus\Larabase\Events\RepositoryEntityUpdated;
-use Visualplus\Larabase\Exceptions\RepositoryException;
+use Lessipe\Larabase\Contracts\CriteriaInterface;
+use Lessipe\Larabase\Contracts\Presentable;
+use Lessipe\Larabase\Contracts\PresentableInterface;
+use Lessipe\Larabase\Contracts\PresenterInterface;
+use Lessipe\Larabase\Contracts\RepositoryCriteriaInterface;
+use Lessipe\Larabase\Contracts\RepositoryInterface;
+use Lessipe\Larabase\Events\RepositoryEntityCreated;
+use Lessipe\Larabase\Events\RepositoryEntityDeleted;
+use Lessipe\Larabase\Events\RepositoryEntityUpdated;
+use Lessipe\Larabase\Exceptions\RepositoryException;
 use Prettus\Validator\Contracts\ValidatorInterface;
 use Prettus\Validator\Exceptions\ValidatorException;
 
 /**
  * Class BaseRepository
- * @package Visualplus\Larabase\Eloquent
+ * @package Lessipe\Larabase\Eloquent
  */
 abstract class BaseRepository implements RepositoryInterface, RepositoryCriteriaInterface
 {
@@ -778,7 +778,7 @@ abstract class BaseRepository implements RepositoryInterface, RepositoryCriteria
      * @param $criteria
      *
      * @return $this
-     * @throws \Visualplus\Larabase\Exceptions\RepositoryException
+     * @throws \Lessipe\Larabase\Exceptions\RepositoryException
      */
     public function pushCriteria($criteria)
     {

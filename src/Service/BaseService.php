@@ -1,6 +1,6 @@
 <?php
 
-namespace Visualplus\Larabase\Service;
+namespace Lessipe\Larabase\Service;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\UploadedFile;
@@ -9,7 +9,7 @@ use Prettus\Validator\Exceptions\ValidatorException;
 use Prettus\Validator\LaravelValidator;
 use Gate;
 use Storage;
-use Visualplus\Larabase\Entities\File;
+use Lessipe\Larabase\Entities\File;
 
 abstract class BaseService
 {

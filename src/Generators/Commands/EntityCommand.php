@@ -1,5 +1,5 @@
 <?php
-namespace Visualplus\Larabase\Generators\Commands;
+namespace Lessipe\Larabase\Generators\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;

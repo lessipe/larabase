@@ -1,9 +1,9 @@
 <?php
-namespace Visualplus\Larabase\Contracts;
+namespace Lessipe\Larabase\Contracts;
 
 /**
  * Interface RepositoryInterface
- * @package Visualplus\Larabase\Contracts
+ * @package Lessipe\Larabase\Contracts
  */
 interface RepositoryInterface
 {

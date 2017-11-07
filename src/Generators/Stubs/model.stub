@@ -3,8 +3,8 @@
 $NAMESPACE$
 
 use Illuminate\Database\Eloquent\Model;
-use Visualplus\Larabase\Contracts\Presentable;
-use Visualplus\Larabase\Traits\PresentableTrait;
+use Lessipe\Larabase\Contracts\Presentable;
+use Lessipe\Larabase\Traits\PresentableTrait;
 
 class $CLASS$ extends Model implements Presentable
 {

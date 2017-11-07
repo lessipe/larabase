@@ -34,7 +34,7 @@ return [
         'params'     => [
             'include' => 'include'
         ],
-        'serializer' => Visualplus\Larabase\Serializers\DefaultSerializer::class,
+        'serializer' => Lessipe\Larabase\Serializers\DefaultSerializer::class,
     ],
 
     /*

@@ -1,14 +1,14 @@
 <?php
 
-namespace Visualplus\Larabase\Generators;
+namespace Lessipe\Larabase\Generators;
 
-use Visualplus\Larabase\Generators\Migrations\NameParser;
-use Visualplus\Larabase\Generators\Migrations\SchemaParser;
+use Lessipe\Larabase\Generators\Migrations\NameParser;
+use Lessipe\Larabase\Generators\Migrations\SchemaParser;
 use Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException;
 
 /**
  * Class MigrationGenerator
- * @package Visualplus\Larabase\Generators
+ * @package Lessipe\Larabase\Generators
  */
 class MigrationGenerator extends Generator
 {

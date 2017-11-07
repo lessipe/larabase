@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Visualplus\Larabase\Entities;
+namespace Lessipe\Larabase\Entities;
 
 use Illuminate\Database\Eloquent\Model;
-use Visualplus\Larabase\Contracts\Presentable;
-use Visualplus\Larabase\Traits\PresentableTrait;
+use Lessipe\Larabase\Contracts\Presentable;
+use Lessipe\Larabase\Traits\PresentableTrait;
 
 class File extends Model implements Presentable
 {

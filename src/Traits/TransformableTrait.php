@@ -1,8 +1,8 @@
-<?php namespace Visualplus\Larabase\Traits;
+<?php namespace Lessipe\Larabase\Traits;
 
 /**
  * Class TransformableTrait
- * @package Visualplus\Larabase\Traits
+ * @package Lessipe\Larabase\Traits
  */
 trait TransformableTrait
 {

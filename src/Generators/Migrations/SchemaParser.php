@@ -1,11 +1,11 @@
 <?php
-namespace Visualplus\Larabase\Generators\Migrations;
+namespace Lessipe\Larabase\Generators\Migrations;
 
 use Illuminate\Contracts\Support\Arrayable;
 
 /**
  * Class SchemaParser
- * @package Visualplus\Larabase\Generators\Migrations
+ * @package Lessipe\Larabase\Generators\Migrations
  */
 class SchemaParser implements Arrayable
 {

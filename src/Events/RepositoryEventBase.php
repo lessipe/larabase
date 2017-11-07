@@ -1,12 +1,12 @@
 <?php
-namespace Visualplus\Larabase\Events;
+namespace Lessipe\Larabase\Events;
 
 use Illuminate\Database\Eloquent\Model;
-use Visualplus\Larabase\Contracts\RepositoryInterface;
+use Lessipe\Larabase\Contracts\RepositoryInterface;
 
 /**
  * Class RepositoryEventBase
- * @package Visualplus\Larabase\Events
+ * @package Lessipe\Larabase\Events
  */
 abstract class RepositoryEventBase
 {
