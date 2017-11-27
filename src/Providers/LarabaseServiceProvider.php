@@ -49,7 +49,6 @@ class LarabaseServiceProvider extends ServiceProvider
         $this->commands(\Lessipe\Larabase\Generators\Commands\ControllerCommand::class);
         $this->commands(\Lessipe\Larabase\Generators\Commands\BindingsCommand::class);
         $this->commands(\Lessipe\Larabase\Generators\Commands\CriteriaCommand::class);
-        $this->commands(\Lessipe\Larabase\Generators\Commands\ActionCommand::class);
         $this->commands(\Lessipe\Larabase\Generators\Commands\JobCommand::class);
         $this->commands(\Lessipe\Larabase\Generators\Commands\ServiceCommand::class);
         $this->commands(\Lessipe\Larabase\Generators\Commands\PolicyCommand::class);
