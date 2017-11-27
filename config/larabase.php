@@ -222,7 +222,6 @@ return [
         'basePath'      => app_path(),
         'rootNamespace' => 'App\\',
         'paths'         => [
-            'actions'      => 'Actions',
             'services'     => 'Services',
             'policies'     => 'Policies',
             'jobs'         => 'Jobs',

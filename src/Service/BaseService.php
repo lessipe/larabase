@@ -19,6 +19,7 @@ abstract class BaseService
     protected function fileDestroy(File $file)
     {
         Storage::delete($file->file_name);
+        File::destroy($file->getKey());
     }
 
     /**
