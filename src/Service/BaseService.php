@@ -15,6 +15,30 @@ abstract class BaseService
 {
     /**
      * @param File $file
+     * @param Model $parent
+     * @param $path
+     * @param null $type
+     * @param int $rank
+     * @return File
+     */
+    protected function fileCopy(File $file, Model $parent, $path, $type = null, $rank = 0)
+    {
+        $fileName = $this->uniqueFileName($path, pathinfo($file->file_name, PATHINFO_EXTENSION));
+
+        Storage::copy($file->file_name, $path . '/' . $fileName);
+
+        return File::create([
+            'file_name' => $path . '/' . $fileName,
+            'original_name' => $file->original_name,
+            'fileable_id' => $parent->getKey(),
+            'fileable_type' => get_class($parent),
+            'type' => $type,
+            'rank' => $rank,
+        ]);
+    }
+
+    /**
+     * @param File $file
      */
     protected function fileDestroy(File $file)
     {
