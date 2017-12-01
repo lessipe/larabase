@@ -406,14 +406,16 @@ abstract class BaseRepository implements RepositoryInterface, RepositoryCriteria
      * @param array $columns
      * @param string $method
      *
+     * @param string $pageName
+     * @param null $page
      * @return mixed
      */
-    public function paginate($limit = null, $columns = ['*'], $method = "paginate")
+    public function paginate($limit = null, $columns = ['*'], $method = "paginate", $pageName = 'page', $page = null)
     {
         $this->applyCriteria();
         $this->applyScope();
         $limit = is_null($limit) ? config('larabase.pagination.limit', 15) : $limit;
-        $results = $this->model->{$method}($limit, $columns);
+        $results = $this->model->{$method}($limit, $columns, $pageName, $page);
         $results->appends(app('request')->query());
         $this->resetModel();
 
