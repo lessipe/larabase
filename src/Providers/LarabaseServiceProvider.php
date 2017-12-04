@@ -4,6 +4,7 @@ namespace Lessipe\Larabase\Providers;
 use Illuminate\Support\ServiceProvider;
 use Lessipe\Larabase\Generators\Commands\ComposerCommand;
 use Lessipe\Larabase\Generators\Commands\ExceptionCommand;
+use Lessipe\Larabase\Generators\Commands\MailCommand;
 
 /**
  * Class LarabaseServiceProvider
@@ -53,6 +54,7 @@ class LarabaseServiceProvider extends ServiceProvider
         $this->commands(\Lessipe\Larabase\Generators\Commands\ServiceCommand::class);
         $this->commands(\Lessipe\Larabase\Generators\Commands\PolicyCommand::class);
         $this->commands(\Lessipe\Larabase\Generators\Commands\NotificationCommand::class);
+        $this->commands(MailCommand::class);
         $this->commands(ComposerCommand::class);
         $this->commands(ExceptionCommand::class);
         $this->app->register('Lessipe\Larabase\Providers\EventServiceProvider');

@@ -237,6 +237,7 @@ return [
             'criteria'     => 'Criteria',
             'composers'    => 'Composers',
             'notifications' => 'Notifications',
+            'mails'        => 'Mails',
             'stubsOverridePath' => app_path()
         ]
     ]

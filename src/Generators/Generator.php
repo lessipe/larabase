@@ -195,6 +195,9 @@ abstract class Generator
     public function getConfigGeneratorClassPath($class, $directoryPath = false)
     {
         switch ($class) {
+            case ('mails' === $class):
+                $path = config('larabase.generator.paths.mails', 'Mails');
+                break;
             case ('notifications' === $class):
                 $path = config('larabase.generator.paths.notifications', 'Notifications');
                 break;
