@@ -52,6 +52,7 @@ class LarabaseServiceProvider extends ServiceProvider
         $this->commands(\Lessipe\Larabase\Generators\Commands\JobCommand::class);
         $this->commands(\Lessipe\Larabase\Generators\Commands\ServiceCommand::class);
         $this->commands(\Lessipe\Larabase\Generators\Commands\PolicyCommand::class);
+        $this->commands(\Lessipe\Larabase\Generators\Commands\NotificationCommand::class);
         $this->commands(ComposerCommand::class);
         $this->commands(ExceptionCommand::class);
         $this->app->register('Lessipe\Larabase\Providers\EventServiceProvider');
