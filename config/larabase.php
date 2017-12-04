@@ -236,6 +236,7 @@ return [
             'provider'     => 'LarabaseServiceProvider',
             'criteria'     => 'Criteria',
             'composers'    => 'Composers',
+            'notifications' => 'Notifications',
             'stubsOverridePath' => app_path()
         ]
     ]
