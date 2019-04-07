@@ -109,19 +109,6 @@ abstract class BaseService
     }
 
     /**
-     * @param $target
-     * @param string $rule
-     * @throws UnauthorizedException
-     * @return void
-     */
-    protected function authorize($target, $rule = 'create')
-    {
-        if (Gate::denies($rule, $target)) {
-            throw new UnauthorizedException();
-        }
-    }
-
-    /**
      * @param UploadedFile $file
      * @param $path
      * @return string
