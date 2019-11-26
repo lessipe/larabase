@@ -4,6 +4,12 @@
 namespace Lessipe\Larabase;
 
 use Illuminate\Support\ServiceProvider;
+use Lessipe\Larabase\Commands\ExceptionCommand;
+use Lessipe\Larabase\Commands\JobCommand;
+use Lessipe\Larabase\Commands\PolicyCommand;
+use Lessipe\Larabase\Commands\PresenterCommand;
+use Lessipe\Larabase\Commands\ServiceCommand;
+use Lessipe\Larabase\Commands\ValidatorCommand;
 
 class LarabaseServiceProvider extends ServiceProvider
 {
@@ -18,6 +24,11 @@ class LarabaseServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->commands();
+        $this->commands(ExceptionCommand::class);
+        $this->commands(JobCommand::class);
+        $this->commands(PolicyCommand::class);
+        $this->commands(PresenterCommand::class);
+        $this->commands(ServiceCommand::class);
+        $this->commands(ValidatorCommand::class);
     }
 }

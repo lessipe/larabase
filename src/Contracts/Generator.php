@@ -35,7 +35,7 @@ abstract class Generator
         $this->name = array_pop($arr);
 
         if (count($arr) > 0) {
-            $this->namespacePrefix = '\\\\' . implode('\\\\', $arr);
+            $this->namespacePrefix = '\\' . implode('\\', $arr);
             $this->pathPrefix = '/' . implode('/', $arr);
         }
     }
@@ -46,6 +46,11 @@ abstract class Generator
     public function generate(): void
     {
         $filePath = $this->getFilePath($this->config['base_path']);
+        $dirName = pathinfo($filePath, PATHINFO_DIRNAME);
+
+        if (!file_exists($dirName)) {
+            mkdir($dirName, 0777, true);
+        }
 
         $fp = fopen($filePath, 'w');
         fwrite($fp, $this->parse());

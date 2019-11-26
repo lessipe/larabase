@@ -1,5 +1,5 @@
 <?php
-$NAMESPACE$;
+namespace $NAMESPACE$;
 
 use Lessipe\Larabase\Contracts\Validator;
 
