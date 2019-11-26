@@ -28,7 +28,7 @@ class PresenterGenerator extends Generator
     protected function getReplacements(string $rootNamespace): array
     {
         return [
-            'NAMESPACE' => $rootNamespace . '\\Presenters' . $this->namespacePrefix,
+            'NAMESPACE' => $rootNamespace . 'Presenters' . $this->namespacePrefix,
             'CLASS_NAME' => $this->name,
         ];
     }

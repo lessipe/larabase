@@ -28,7 +28,7 @@ class ServiceGenerator extends Generator
     protected function getReplacements(string $rootNamespace): array
     {
         return [
-            'NAMESPACE' => $rootNamespace . '\\Services' . $this->namespacePrefix,
+            'NAMESPACE' => $rootNamespace . 'Services' . $this->namespacePrefix,
             'CLASS_NAME' => $this->name,
         ];
     }

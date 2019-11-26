@@ -28,7 +28,7 @@ class ValidatorGenerator extends Generator
     protected function getReplacements(string $rootNamespace): array
     {
         return [
-            'NAMESPACE' => $rootNamespace . '\\Validators' . $this->namespacePrefix,
+            'NAMESPACE' => $rootNamespace . 'Validators' . $this->namespacePrefix,
             'CLASS_NAME' => $this->name,
         ];
     }

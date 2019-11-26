@@ -28,7 +28,7 @@ class PolicyGenerator extends Generator
     protected function getReplacements(string $rootNamespace): array
     {
         return [
-            'NAMESPACE' => $rootNamespace . '\\Policies' . $this->namespacePrefix,
+            'NAMESPACE' => $rootNamespace . 'Policies' . $this->namespacePrefix,
             'CLASS_NAME' => $this->name,
         ];
     }

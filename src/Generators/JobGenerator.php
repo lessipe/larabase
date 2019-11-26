@@ -28,7 +28,7 @@ class JobGenerator extends Generator
     protected function getReplacements(string $rootNamespace): array
     {
         return [
-            'NAMESPACE' => $rootNamespace . '\\Jobs' . $this->namespacePrefix,
+            'NAMESPACE' => $rootNamespace . 'Jobs' . $this->namespacePrefix,
             'CLASS_NAME' => $this->name,
         ];
     }

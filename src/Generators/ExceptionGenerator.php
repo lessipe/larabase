@@ -28,7 +28,7 @@ class ExceptionGenerator extends Generator
     protected function getReplacements(string $rootNamespace): array
     {
         return [
-            'NAMESPACE' => $rootNamespace . '\\Exceptions' . $this->namespacePrefix,
+            'NAMESPACE' => $rootNamespace . 'Exceptions' . $this->namespacePrefix,
             'CLASS_NAME' => $this->name,
         ];
     }
