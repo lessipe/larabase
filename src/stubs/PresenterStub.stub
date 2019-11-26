@@ -1,0 +1,18 @@
+<?php
+$NAMESPACE$;
+
+use Lessipe\Larabase\Contracts\Presenter;
+use Illuminate\Database\Eloquent\Model;
+
+class $CLASS_NAME$ extends Presenter
+{
+    /**
+     * @param Model $model
+     * @return array
+     */
+    protected function parse(Model $model): array
+    {
+        return [
+        ];
+    }
+}

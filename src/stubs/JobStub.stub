@@ -1,0 +1,9 @@
+<?php
+$NAMESPACE$;
+
+use Lessipe\Larabase\Contracts\Job;
+
+class $CLASS_NAME$ extends Job
+{
+
+}

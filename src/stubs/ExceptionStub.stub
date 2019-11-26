@@ -1,0 +1,8 @@
+<?php
+$NAMESPACE$;
+
+use Lessipe\Larabase\Contracts\Exception;
+
+class $CLASS_NAME$ extends Exception
+{
+}

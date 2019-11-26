@@ -1,96 +1,44 @@
 <?php
 
+
 namespace Lessipe\Larabase\Generators;
 
-/**
- * Class ServiceGenerator
- * @package Lessipe\Larabase\Generators
- */
+
+use Lessipe\Larabase\Contracts\Generator;
+
 class ServiceGenerator extends Generator
 {
     /**
-     * @var string
-     */
-    protected $stub = 'service/service';
-
-    /**
      * @return string
      */
-    public function getPathConfigNode()
+    protected function getStub(): string
     {
-        return 'services';
+        $path = __DIR__ . '/../stubs/ServiceStub.stub';
+        $fp = fopen($path, 'r');
+        $stub = fread($fp, filesize($path));
+        fclose($fp);
+
+        return $stub;
     }
 
     /**
-     * Get root namespace.
-     *
-     * @return string
-     */
-    public function getRootNamespace()
-    {
-        return parent::getRootNamespace() . parent::getConfigGeneratorClassPath($this->getPathConfigNode());
-    }
-
-    /**
-     * Get destination path for generated file.
-     *
-     * @return string
-     */
-    public function getPath()
-    {
-        return $this->getBasePath() . '/' . parent::getConfigGeneratorClassPath($this->getPathConfigNode(), true) . '/' . $this->getName() . 'Service.php';
-    }
-
-    /**
-     * Get base path of destination file.
-     *
-     * @return string
-     */
-    public function getBasePath()
-    {
-        return config('larabase.generator.basePath', app_path());
-    }
-
-    /**
-     * Get array replacements.
-     *
+     * @param string $rootNamespace
      * @return array
      */
-    public function getReplacements()
+    protected function getReplacements(string $rootNamespace): array
     {
-        $repository = parent::getRootNamespace() . parent::getConfigGeneratorClassPath('interfaces') . '\\' . $this->name . 'Repository;';
-        $repository = str_replace([
-            "\\",
-            '/'
-        ], '\\', $repository);
-
-        return array_merge(parent::getReplacements(), [
-            'use_validator' => $this->getValidatorUse(),
-            'repository'    => $repository,
-        ]);
+        return [
+            'NAMESPACE' => $rootNamespace . '\\Services' . $this->namespacePrefix,
+            'CLASS_NAME' => $this->name,
+        ];
     }
 
-    public function getValidatorUse()
+    /**
+     * @param string $basePath
+     * @return string
+     */
+    protected function getFilePath(string $basePath): string
     {
-        $validator = $this->getValidator();
-
-        return "use {$validator};";
-    }
-
-    public function getValidator()
-    {
-        $validatorGenerator = new ValidatorGenerator([
-            'name'  => $this->name,
-            'rules' => $this->rules,
-            'force' => $this->force,
-        ]);
-
-        $validator = $validatorGenerator->getRootNamespace() . '\\' . $validatorGenerator->getName();
-
-        return str_replace([
-                "\\",
-                '/'
-            ], '\\', $validator) . 'Validator';
-
+        return $basePath . '/Services' . $this->pathPrefix . '/' . $this->name . '.php';
     }
 }

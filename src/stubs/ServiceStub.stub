@@ -1,0 +1,8 @@
+<?php
+$NAMESPACE$;
+
+use Lessipe\Larabase\Contracts\Service;
+
+class $CLASS_NAME$ extends Service
+{
+}

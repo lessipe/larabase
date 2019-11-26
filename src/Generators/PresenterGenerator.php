@@ -1,79 +1,44 @@
 <?php
+
+
 namespace Lessipe\Larabase\Generators;
 
-/**
- * Class PresenterGenerator
- * @package Lessipe\Larabase\Generators
- */
+
+use Lessipe\Larabase\Contracts\Generator;
 
 class PresenterGenerator extends Generator
 {
     /**
-     * Get stub name.
-     *
-     * @var string
-     */
-    protected $stub = 'presenter/presenter';
-
-    /**
-     * Get root namespace.
-     *
      * @return string
      */
-    public function getRootNamespace()
+    protected function getStub(): string
     {
-        return parent::getRootNamespace() . parent::getConfigGeneratorClassPath($this->getPathConfigNode());
+        $path = __DIR__ . '/../stubs/PresenterStub.stub';
+        $fp = fopen($path, 'r');
+        $stub = fread($fp, filesize($path));
+        fclose($fp);
+
+        return $stub;
     }
 
     /**
-     * Get generator path config node.
-     *
-     * @return string
-     */
-    public function getPathConfigNode()
-    {
-        return 'presenters';
-    }
-
-    /**
-     * Get array replacements.
-     *
+     * @param string $rootNamespace
      * @return array
      */
-    public function getReplacements()
+    protected function getReplacements(string $rootNamespace): array
     {
-        $transformerGenerator = new TransformerGenerator([
-            'name' => $this->name
-        ]);
-        $transformer = $transformerGenerator->getRootNamespace() . '\\' . $transformerGenerator->getName() . 'Transformer';
-        $transformer = str_replace([
-            "\\",
-            '/'
-        ], '\\', $transformer);
-        echo $transformer;
-
-        return array_merge(parent::getReplacements(), [
-            'transformer' => $transformer
-        ]);
+        return [
+            'NAMESPACE' => $rootNamespace . '\\Presenters' . $this->namespacePrefix,
+            'CLASS_NAME' => $this->name,
+        ];
     }
 
     /**
-     * Get destination path for generated file.
-     *
+     * @param string $basePath
      * @return string
      */
-    public function getPath()
+    protected function getFilePath(string $basePath): string
     {
-        return $this->getBasePath() . '/' . parent::getConfigGeneratorClassPath($this->getPathConfigNode(), true) . '/' . $this->getName() . 'Presenter.php';
-    }
-
-    /**
-     * Get base path of destination file.
-     *
-     * @return string
-     */
-    public function getBasePath()
-    {
-        return config('larabase.generator.basePath', app_path());
+        return $basePath . '/Presenters' . $this->pathPrefix . '/' . $this->name . '.php';
     }
 }

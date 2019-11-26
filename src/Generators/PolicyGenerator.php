@@ -1,70 +1,44 @@
 <?php
+
+
 namespace Lessipe\Larabase\Generators;
 
-use Lessipe\Larabase\Generators\Migrations\SchemaParser;
 
-/**
- * Class PolicyGenerator
- * @package Lessipe\Larabase\Generators
- */
+use Lessipe\Larabase\Contracts\Generator;
+
 class PolicyGenerator extends Generator
 {
-
     /**
-     * Get stub name.
-     *
-     * @var string
-     */
-    protected $stub = 'policy/policy';
-
-    /**
-     * Get root namespace.
-     *
      * @return string
      */
-    public function getRootNamespace()
+    protected function getStub(): string
     {
-        return parent::getRootNamespace() . parent::getConfigGeneratorClassPath($this->getPathConfigNode());
+        $path = __DIR__ . '/../stubs/PolicyStub.stub';
+        $fp = fopen($path, 'r');
+        $stub = fread($fp, filesize($path));
+        fclose($fp);
+
+        return $stub;
     }
 
     /**
-     * Get generator path config node.
-     *
-     * @return string
-     */
-    public function getPathConfigNode()
-    {
-        return 'policies';
-    }
-
-    /**
-     * Get destination path for generated file.
-     *
-     * @return string
-     */
-    public function getPath()
-    {
-        return $this->getBasePath() . '/' . parent::getConfigGeneratorClassPath($this->getPathConfigNode(), true) . '/' . $this->getName() . 'Policy.php';
-    }
-
-    /**
-     * Get base path of destination file.
-     *
-     * @return string
-     */
-    public function getBasePath()
-    {
-        return config('larabase.generator.basePath', app_path());
-    }
-
-    /**
-     * Get array replacements.
-     *
+     * @param string $rootNamespace
      * @return array
      */
-    public function getReplacements()
+    protected function getReplacements(string $rootNamespace): array
     {
-        return array_merge(parent::getReplacements(), [
-        ]);
+        return [
+            'NAMESPACE' => $rootNamespace . '\\Policies' . $this->namespacePrefix,
+            'CLASS_NAME' => $this->name,
+        ];
+    }
+
+    /**
+     * @param string $basePath
+     * @return string
+     */
+    protected function getFilePath(string $basePath): string
+    {
+        return $basePath . '/Policies' . $this->pathPrefix . '/' . $this->name . '.php';
     }
 }

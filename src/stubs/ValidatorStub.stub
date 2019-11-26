@@ -1,0 +1,41 @@
+<?php
+$NAMESPACE$;
+
+use Lessipe\Larabase\Contracts\Validator;
+
+class $CLASS_NAME$ extends Validator
+{
+    /**
+     * @var array
+     */
+    protected $rules = [
+    ];
+
+    /**
+     * @param $type
+     * @return array
+     */
+    protected function getValidationRule($type): array
+    {
+        return $this->rules[$type];
+    }
+
+    /**
+     * @param $type
+     * @return array
+     */
+    protected function getMessages($type): array
+    {
+        return [];
+    }
+
+    /**
+     * @param $type
+     * @return array
+     */
+    protected function getCustomAttributes($type): array
+    {
+        return [
+        ];
+    }
+}
