@@ -10,6 +10,7 @@ use Lessipe\Larabase\Commands\PolicyCommand;
 use Lessipe\Larabase\Commands\PresenterCommand;
 use Lessipe\Larabase\Commands\ServiceCommand;
 use Lessipe\Larabase\Commands\ValidatorCommand;
+use Lessipe\Larabase\Generators\ModelGenerator;
 
 class LarabaseServiceProvider extends ServiceProvider
 {
@@ -30,5 +31,6 @@ class LarabaseServiceProvider extends ServiceProvider
         $this->commands(PresenterCommand::class);
         $this->commands(ServiceCommand::class);
         $this->commands(ValidatorCommand::class);
+        $this->commands(ModelGenerator::class);
     }
 }
