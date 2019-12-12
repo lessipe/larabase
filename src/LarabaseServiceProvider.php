@@ -6,6 +6,7 @@ namespace Lessipe\Larabase;
 use Illuminate\Support\ServiceProvider;
 use Lessipe\Larabase\Commands\ExceptionCommand;
 use Lessipe\Larabase\Commands\JobCommand;
+use Lessipe\Larabase\Commands\MailCommand;
 use Lessipe\Larabase\Commands\ModelCommand;
 use Lessipe\Larabase\Commands\NotificationCommand;
 use Lessipe\Larabase\Commands\PolicyCommand;
@@ -35,5 +36,6 @@ class LarabaseServiceProvider extends ServiceProvider
         $this->commands(ValidatorCommand::class);
         $this->commands(ModelCommand::class);
         $this->commands(NotificationCommand::class);
+        $this->commands(MailCommand::class);
     }
 }
